@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 5em;
+}
+
+strong {
+  color:blue;
+}
+
+.mainText,
+.blankWords {
+  margin: 1em;
+  padding: 0.5em;
+  border: 0.1em;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 1.25em;
+}
+
+.topBar {
+  border-style: solid;
+  padding: 1em;
+  border-color: #000000;
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 1em;
+  line-height: 1.5em;
+}
