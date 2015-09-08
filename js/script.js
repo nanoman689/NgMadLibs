@@ -13,7 +13,7 @@ angular.module('myApp', [])
     {word: 'adjective', placeholder:'adjective'}
     ];
 
-    $scope.madLib = true;
+    $scope.mainText = true;
 
     $scope.submit = function(){
       var validForm = $scope.myForm.$valid;
@@ -29,13 +29,13 @@ angular.module('myApp', [])
 
       if(validForm || validName || validJobTitle || validTediousTask || validDirtyTask || validCelebrity || validUselessSkill || validObnoxiousCelebirty || validHugeNumber || validAdjective){
         // Hide Inputs if all the fields are filled.
-        $scope.formInputs = true;
-        $scope.madLib = false;
+        $scope.blankWords = true;
+        $scope.mainText = false;
       }
     };
     // Reset Button
     $scope.startOver = function(){
-      $scope.madLib = true;
-      $scope.formInputs = false;
+      $scope.blankWords = false;
+      $scope.mainText = true;
     };
   })

@@ -15,8 +15,8 @@
       <img src="img/ng-mad-libs-logo.png">
     <div>
 
-    <div ng-controller="myCtrl" ng-hide="formInputs">
-      <div class="blankWords animate-form">
+    <div ng-controller="myCtrl">
+      <div class="ng-hide" ng-hide="blankWords">
         <input type="text" placeholder="Name" ng-model="data.name" name="myName" required="">
         <input type="text" placeholder="Job Title" ng-model="data.job_title" name="myJobTitle" required="">
         <input type="text" placeholder="Tedious Task" ng-model="data.tedious_task" name="myTediousTask" required="">
@@ -31,7 +31,7 @@
 
       </div>
 
-      <div class="mainText animate-content" ng-hide="madLib">
+      <div class="ng-hide" ng-hide="mainText">
         <p>
           <strong>{{data.name || 'Name'}}</strong> was a <strong>{{data.job_title || 'Job Title'}}</strong> who loved technology. Although she loved parts of her job, she absolutely hated  <strong>{{data.tedious_task || 'Tedious Task'}}</strong> and <strong>{{data.dirty_task || 'Dirty Task'}}</strong>. So, <strong>{{data.name || 'Name'}}</strong> met with her life mentor <strong>{{data.celebrity || 'Celebrity'}}</strong> who told her to learn how to <strong>{{data.useless_skill || 'Useless Skill'}}</strong> with Thinkful. Thinkful didn't offer a course on <strong>{{data.useless_skill || 'Useless Skill'}}</strong> so she studied programming instead. What a great decision! With her new skills, <strong>{{data.name || 'Name'}}</strong> built a(n) <strong>{{data.adjective || 'Adjective'}}</strong> robot named <strong>{{data.obnoxiuous_celebrity || 'Obnoxious Celebrity'}}</strong> that not only loved <strong>{{data.dirty_task || 'Dirty Task'}}</strong> but did it <strong>{{data.huge_number || 'Huge Number'}}</strong> faster.
         </p>

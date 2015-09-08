@@ -33,37 +33,3 @@ input[type="number"] {
   font-size: 1em;
   line-height: 1.5em;
 }
-
-.ng-hide {
-  /* this is just another form of hiding an element */
-  display: block!important;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.animate-content.ng-hide-add{
-  transition: all 0s ease-out;
-	opacity: 1;
-}
-.animate-content.ng-hide-remove{
-	transition: all 1s ease-out;
-	opacity: 1;
-}
-
-.animate-content.ng-hide{
-	opacity: 0
-}
-
-.animate-form.ng-hide-add{
-  transition: all 0s ease-out;
-	opacity: 1;
-}
-.animate-form.ng-hide-remove{
-	transition: all 1s ease-out;
-	opacity: 1;
-}
-
-.animate-form.ng-hide{
-	opacity: 0
-}
