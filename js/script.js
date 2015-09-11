@@ -17,6 +17,7 @@ angular.module('myApp', [])
 
     $scope.submit = function(){
       var validForm = $scope.myForm.$valid;
+      console.log(validForm);
       var validName = $scope.myForm.myName.$valid;
       var validJobTitle = $scope.myForm.myJobTitle.$valid;
       var validTediousTask= $scope.myForm.myTediousTask.$valid;
