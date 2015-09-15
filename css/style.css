@@ -17,6 +17,27 @@ strong {
   font-size: 1.25em;
 }
 
+.hide {
+  opacity: 1;
+  margin-left: 0px;
+  max-height: 1;
+  padding: 0em;
+}
+
+/* starting animation */
+.hide.ng-hide-add,
+.hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+/* ending animation */
+.hide.ng-hide {
+  margin-left: -200px;
+  opacity: 0;
+  max-height: 0;
+  padding: 1em;
+}
+
 .topBar {
   border-style: solid;
   padding: 1em;
